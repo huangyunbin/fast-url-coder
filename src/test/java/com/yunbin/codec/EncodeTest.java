@@ -9,6 +9,11 @@ import java.net.URLEncoder;
  */
 public class EncodeTest {
 
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         com.ziesemer.utils.codec.impl.URLEncoder urlEncoder = new com.ziesemer.utils.codec.impl.URLEncoder();
 

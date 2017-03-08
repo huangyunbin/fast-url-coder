@@ -10,6 +10,13 @@ import java.util.concurrent.CountDownLatch;
  */
 public class EncodeStressTest {
 
+    /**
+     * 单线程 跑5000次用时(ms)
+     * java自带 4591
+     * apache   2840
+     * ziesemer 1972
+     * 我自己写的 1262
+     */
     public static void main(String[] args) throws Exception {
         int type = Integer.valueOf(args[0]);
         int threadNum = Integer.valueOf(args[1]);
@@ -45,9 +52,6 @@ public class EncodeStressTest {
 
                             }
 
-
-                            System.out.println(result.length());
-                            System.out.println(result.getBytes("utf8").length);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
