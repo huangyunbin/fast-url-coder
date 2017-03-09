@@ -44,7 +44,7 @@ public class EncodeStressTest {
                                     result = new String(URLCodec.encodeUrl(null, Constant.URL.getBytes("utf8")));
                                     break;
                                 case 3:
-                                    result = new String(urlEncoder.encodeToString(Constant.URL.getBytes("utf8")));
+                                    result = urlEncoder.encodeToString(Constant.URL.getBytes("utf8"));
                                     break;
                                 case 4:
                                     result = FastEncoder.encode(Constant.URL.getBytes("utf8"));
