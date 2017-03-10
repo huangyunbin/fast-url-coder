@@ -18,10 +18,10 @@ public class BenchmarkTest {
 
 
     @Benchmark
-    @Warmup(iterations = 5)
-    @Measurement(iterations = 2)
-//    @Fork(2)
-    @Threads(1)
+//    @Warmup(iterations = 5)
+//    @Measurement(iterations = 2)
+//    @Fork(10)
+//    @Threads(1)
     // qps 7811.398 ± 258
     public void myTest() {
         String result = FastEncoder.encode(bytes);
